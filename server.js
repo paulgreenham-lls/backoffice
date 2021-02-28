@@ -8,7 +8,7 @@ const {ObjectId} = require('mongodb');
 const {jwtKey} = require('./src/config');
 
 const mongoose = require('mongoose');
-mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/appTemplate', {
+mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/backoffice', {
     useNewUrlParser: true,
     useFindAndModify: false,
     useCreateIndex: true,
